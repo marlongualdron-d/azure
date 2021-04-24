@@ -27,7 +27,7 @@ jobs:
       run: mvn clean install
 
     - name: Run Azure webapp deploy action using publish profile credentials
-      uses: azure/webapps-deploy@v2
+      uses: azure/apicrud/webapps-deploy@v2
       with:
         app-name: demo-api-crud
         slot-name: Production
